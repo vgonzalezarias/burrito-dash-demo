@@ -23,7 +23,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="logo" href="index.html"><img src="images/logo-black.png" alt="Burrito Dash"></a>
+    <a class="logo" href="index.html"><img src="images/site/logo.png" width="460" height="345" alt="Burrito Dash"></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
@@ -44,13 +44,18 @@
 <main>
 
   <section class="hero hero-compact">
-    <div class="container">
+    <div class="container hero-split">
+      <div>
       <span class="badge">25-person minimum</span>
       <h1>Catering, delivered and ready to serve</h1>
       <p>You pick the date, the meal and the fillings. We cook, wrap, pack and drop it off &mdash; in trays and in large bags, with everything a table needs.</p>
       <div class="hero-actions">
         <a class="btn" href="contact.html">Request a quote</a>
         <a class="btn btn-outline" href="menu.html">See the fillings</a>
+      </div>
+      </div>
+      <div class="hero-media" style="margin-top:2rem">
+        <picture><source srcset="images/site/flyer-catering.webp" type="image/webp"><img src="images/site/flyer-catering.jpg" width="906" height="614" alt="Burrito Dash catering flyer: minimum 25 people, regular size burritos, pick your fillings, delivered in trays and in large bags."></picture>
       </div>
     </div>
   </section>
@@ -60,12 +65,14 @@
       <h2>Guest packages</h2>
       <p class="lede">Each package mixes big burritos with smaller ones, so people who want a lot and people who want a little are both handled.</p>
       <div class="pkg-grid">
-        <article class="pkg pkg-featured">
+        <article class="pkg pkg-featured reveal">
           <span class="badge badge-ghost">Most booked</span>
           <h3>Package for 25 guests</h3>
-          <p class="pkg-count">25 <span style="font-size:1rem;font-weight:600;color:var(--color-ink-soft)">big burritos</span></p>
+          <div class="pkg-split">
+            <div><span class="num">25</span><span class="lbl">big burritos</span> <span class="size-tag size-big">Big</span></div>
+            <div><span class="num small-num">12</span><span class="lbl">smaller burritos</span> <span class="size-tag size-small">Small</span></div>
+          </div>
           <ul>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 12 smaller burritos</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Red and green salsa</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Cilantro and onion</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Limes</li>
@@ -73,11 +80,13 @@
           </ul>
           <p style="margin-top:1.3rem"><a class="btn" href="contact.html">Get a price</a></p>
         </article>
-        <article class="pkg">
+        <article class="pkg reveal">
           <h3>Package for 50 guests</h3>
-          <p class="pkg-count">50 <span style="font-size:1rem;font-weight:600;color:var(--color-ink-soft)">big burritos</span></p>
+          <div class="pkg-split">
+            <div><span class="num">50</span><span class="lbl">big burritos</span> <span class="size-tag size-big">Big</span></div>
+            <div><span class="num small-num">24</span><span class="lbl">smaller burritos</span> <span class="size-tag size-small">Small</span></div>
+          </div>
           <ul>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 24 smaller burritos</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Red and green salsa</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Cilantro and onion</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Limes</li>
@@ -86,21 +95,36 @@
           <p style="margin-top:1.3rem"><a class="btn btn-outline" href="contact.html">Get a price</a></p>
         </article>
       </div>
+      <figure style="margin:2.5rem auto 0;max-width:46rem" class="reveal">
+        <picture><source srcset="images/site/packages-25-50.webp" type="image/webp"><img class="photo-frame" src="images/site/packages-25-50.jpg" width="694" height="495" loading="lazy" alt="Package flyer: 25 guests gets 25 big and 12 smaller burritos; 50 guests gets 50 big and 24 smaller burritos, plus cilantro, cebolla, salsa, limes, plates, napkins and utensils."></picture>
+        <figcaption class="photo-caption">From the Burrito Dash packages flyer &mdash; the same counts as above.</figcaption>
+      </figure>
       <p class="menu-foot">Bigger than 50? Say so in your message and we'll build the order around your head count.</p>
     </div>
   </section>
 
-  <section class="section-alt">
-    <div class="container">
-      <h2>Feeding fewer than 25?</h2>
-      <p>There are smaller packs for family dinners and small gatherings &mdash; a <strong>pack of 6</strong> and a <strong>pack of 10</strong>, both with chips and salsa included. No two-week notice needed on those.</p>
-      <!--
-        BUILD NOTE: the client's artwork for these packs is branded "Burrito BASH", not
-        "Burrito DASH". That may be a second brand or a typo in their graphic, so the packs
-        are described here WITHOUT that name until the client confirms which it is.
-        See docs/CONTENT-TODO.md.
-      -->
-      <p><a href="contact.html">Ask about the small packs &rarr;</a></p>
+  <section class="section-alt" id="packs">
+    <div class="container split">
+      <div>
+        <span class="badge">Under 25 people</span>
+        <h2 style="margin-top:.8rem">Feeding fewer than 25?</h2>
+        <p>There are smaller packs for family dinners and small gatherings &mdash; a <strong>pack of 6</strong> and a <strong>pack of 10</strong>, both with chips and salsa included. No two-week notice needed on those.</p>
+        <!--
+          BUILD NOTE: the client's artwork for these packs is branded "Burrito BASH", not
+          "Burrito DASH". That may be a second brand or a typo in their graphic, so the packs
+          are described here WITHOUT that name until the client confirms which it is.
+          See docs/CONTENT-TODO.md.
+        -->
+        <div class="pack-grid">
+          <div class="pack reveal"><span class="pack-num"><strong>6</strong><span>pack</span></span><div><h3>Pack of 6</h3><p>Six foil-wrapped burritos, boxed. Chips &amp; salsa included.</p></div></div>
+          <div class="pack reveal"><span class="pack-num"><strong>10</strong><span>pack</span></span><div><h3>Pack of 10</h3><p>Ten foil-wrapped burritos, boxed. Chips &amp; salsa included.</p></div></div>
+        </div>
+        <p style="margin-top:1.4rem"><a href="contact.html">Ask about the small packs &rarr;</a></p>
+      </div>
+      <figure class="reveal" style="margin:0">
+        <picture><source srcset="images/site/flyer-bash-packs.webp" type="image/webp"><img class="photo-frame" src="images/site/flyer-bash-packs.jpg" width="897" height="948" loading="lazy" alt="Catering packages flyer: a pack of 6 and a pack of 10 foil-wrapped burritos, with bags of chips and red and green salsa."></picture>
+        <figcaption class="photo-caption">The packs flyer (branded &ldquo;Burrito Bash&rdquo; in the artwork).</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -137,8 +161,10 @@
           <p>If you'd rather keep beans and rice out of the burrito so people can build their own plates, ask &mdash; we can serve them separate.</p>
         </div>
         <div class="hero-media">
-          <img src="images/catering-setup.jpg" width="736" height="590"
-               alt="A delivered Burrito Dash setup: four foil trays with lids, containers of red salsa, green salsa, cilantro, onion and lime wedges, a stack of plates, napkins, black utensils, and two trays of individually wrapped burritos.">
+          <picture><source srcset="images/site/setup-table.webp" type="image/webp"><img src="images/site/setup-table.jpg" width="912" height="520" loading="lazy"
+               alt="A delivered Burrito Dash setup: four branded foil trays with lids, containers of red salsa, green salsa, cilantro, onion and lime wedges, a stack of plates, napkins, black utensils, and a tray of individually wrapped burritos."></picture>
+          <picture><source srcset="images/site/catering-trays.webp" type="image/webp"><img src="images/site/catering-trays.jpg" width="1060" height="380" loading="lazy" style="margin-top:1rem"
+               alt="Two foil trays of wrapped burritos with a plate of rolled burritos, salsa, plates and Burrito Dash delivery bags."></picture>
         </div>
       </div>
     </div>
@@ -146,7 +172,7 @@
 
   <section>
     <div class="container">
-      <div class="rules">
+      <div class="rules reveal">
         <h2 style="font-size:1.35rem">The rules, up front</h2>
         <ul>
           <li><strong>Two weeks in advance.</strong> Catering orders must be placed at least two weeks before the date.</li>
@@ -172,7 +198,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-logo">
-        <img src="images/logo-black.png" alt="Burrito Dash">
+        <img src="images/site/logo.png" width="460" height="345" alt="Burrito Dash" loading="lazy">
         <p>Drop-off burrito catering for offices, parties and anything with 25 hungry people. Good food brings people together.</p>
       </div>
       <div>

@@ -23,7 +23,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="logo" href="index.html"><img src="images/logo-black.png" alt="Burrito Dash"></a>
+    <a class="logo" href="index.html"><img src="images/site/logo.png" width="460" height="345" alt="Burrito Dash"></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
@@ -51,17 +51,24 @@
   </section>
 
   <section>
-    <div class="container">
+    <div class="container split split-wide" style="align-items:start">
+      <div>
       <h2>How we work</h2>
       <p>Burrito Dash is a catering kitchen. We're not a counter you queue at &mdash; we cook for groups, wrap everything, and bring it to where your people are.</p>
       <p>Orders are made for your date. The meat gets cooked, the burritos get rolled and wrapped, and the salsas, cilantro, onion and limes go into their own containers so nothing goes soggy on the way. It arrives in foil trays and large bags, with plates, napkins and utensils, and it's ready to put straight on a table.</p>
       <p>The menu stays short on purpose. Carne asada, birria, chicharrón, picadillo, deshebrada, bistec in red chili, and a full breakfast line-up. Those are things worth doing properly rather than forty things done halfway.</p>
       <p>We take catering orders at least two weeks out, with a 25-person minimum, because that's what it takes to cook this much food without cutting corners on any of it.</p>
+      </div>
+      <figure class="reveal" style="margin:0">
+        <picture><source srcset="images/site/sabor-burrito.webp" type="image/webp"><img class="photo-frame" src="images/site/sabor-burrito.jpg" width="780" height="650" loading="lazy" alt="A Burrito Dash burrito cut open in its foil, packed with shredded meat and rice, with cilantro and onion."></picture>
+        <figcaption class="photo-caption">Sabor auténtico &mdash; from the Burrito Dash flyer.</figcaption>
+      </figure>
     </div>
   </section>
 
   <section class="section-alt">
-    <div class="container">
+    <div class="container split" style="align-items:start">
+      <div>
       <h2>Our story</h2>
       <p class="lede"><span class="todo">[PLACEHOLDER — the owner's story goes here]</span></p>
       <p style="max-width:62ch;color:var(--color-ink-soft)">
@@ -70,6 +77,25 @@
         recipes these are. What you were doing before this. Where you cook. Nothing here was
         guessed &mdash; see <code>docs/CONTENT-TODO.md</code> for the four questions that fill it in.
       </p>
+      </div>
+      <figure class="reveal" style="margin:0;max-width:24rem;justify-self:center">
+        <picture><source srcset="images/site/flyer-catering-chef.webp" type="image/webp"><img class="photo-frame" src="images/site/flyer-catering-chef.jpg" width="638" height="844" loading="lazy" alt="Burrito Dash catering flyer: ideal for offices, birthdays, graduations and corporate events, with trays of wrapped burritos and salsas."></picture>
+        <figcaption class="photo-caption">From the Burrito Dash catering flyer.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>From the kitchen</h2>
+      <p class="lede">Clips and flyers from the Burrito Dash feed.</p>
+      <div class="gallery-strip" tabindex="0" role="region" aria-label="Burrito Dash kitchen photos">
+        <figure><picture><source srcset="images/site/tiktok-carne.webp" type="image/webp"><img src="images/site/tiktok-carne.jpg" width="316" height="452" loading="lazy" alt="Grilled meat, from a Burrito Dash TikTok clip."></picture><figcaption>Off the grill</figcaption></figure>
+        <figure><picture><source srcset="images/site/tiktok-pot.webp" type="image/webp"><img src="images/site/tiktok-pot.jpg" width="316" height="464" loading="lazy" alt="A pot of meat cooking, from a Burrito Dash TikTok clip."></picture><figcaption>On the stove</figcaption></figure>
+        <figure><picture><source srcset="images/site/tiktok-tortillas.webp" type="image/webp"><img src="images/site/tiktok-tortillas.jpg" width="316" height="456" loading="lazy" alt="Rolled burritos on a plate, from a Burrito Dash TikTok clip."></picture><figcaption>Fresh rolled</figcaption></figure>
+        <figure><picture><source srcset="images/site/tiktok-wrapping.webp" type="image/webp"><img src="images/site/tiktok-wrapping.jpg" width="316" height="464" loading="lazy" alt="Burritos wrapped in foil and paper, from a Burrito Dash TikTok clip."></picture><figcaption>Wrapped and ready</figcaption></figure>
+        <figure><picture><source srcset="images/site/flyer-sabor.webp" type="image/webp"><img src="images/site/flyer-sabor.jpg" width="780" height="1127" loading="lazy" alt="Sabor auténtico flyer: a burrito cut open with cilantro and onion."></picture><figcaption>Sabor auténtico</figcaption></figure>
+      </div>
     </div>
   </section>
 
@@ -77,17 +103,17 @@
     <div class="container">
       <h2>What you can count on</h2>
       <div class="card-grid">
-        <article class="card">
+        <article class="card reveal">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
           <h3>Made for your date</h3>
           <p>Nothing is pre-made and parked. Your order gets cooked for the day you booked.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>
           <h3>The date is really yours</h3>
           <p>Once your order is confirmed the day is reserved. We don't double-book and hope.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
           <h3>Everything included</h3>
           <p>Salsa, cilantro, onion, limes, plates, napkins and utensils come with the order.</p>
@@ -110,7 +136,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-logo">
-        <img src="images/logo-black.png" alt="Burrito Dash">
+        <img src="images/site/logo.png" width="460" height="345" alt="Burrito Dash" loading="lazy">
         <p>Drop-off burrito catering for offices, parties and anything with 25 hungry people. Good food brings people together.</p>
       </div>
       <div>

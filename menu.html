@@ -23,7 +23,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="logo" href="index.html"><img src="images/logo-black.png" alt="Burrito Dash"></a>
+    <a class="logo" href="index.html"><img src="images/site/logo.png" width="460" height="345" alt="Burrito Dash"></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
@@ -47,10 +47,28 @@
     <div class="container">
       <h1>The menu</h1>
       <p>Real fillings, made to order. Pick what you want in your burritos — you can mix across the list in one order.</p>
+      <nav class="jump-links" aria-label="Menu sections">
+        <a href="#breakfast">Big &mdash; breakfast</a>
+        <a href="#lunch-dinner">Big &mdash; lunch &amp; dinner</a>
+        <a href="#small">Smaller burritos</a>
+        <a href="#packages">Packages &amp; packs</a>
+        <a href="#included">Included</a>
+      </nav>
     </div>
   </section>
 
-  <section>
+  <section style="padding-bottom:2rem">
+    <div class="container">
+      <h2>Two sizes</h2>
+      <p class="lede">Big burritos are the main event. The smaller ones come alongside in every guest package &mdash; handy for lighter appetites and for kids.</p>
+      <div class="size-compare">
+        <figure class="reveal"><svg viewBox="0 0 340 140" role="img" aria-label="Illustration of a big burrito"><ellipse cx="170" cy="128" rx="140" ry="8" fill="#000" opacity=".5"/><path d="M28,66 C26,36 46,20 78,18 C140,12 220,14 282,20 C308,24 322,44 322,68 C322,94 306,116 280,118 C214,124 140,124 80,118 C48,115 30,96 28,66 Z" fill="#E8B86F" stroke="#2B1A0E" stroke-width="5"/><path d="M98,18 C110,52 108,90 94,120" stroke="#2B1A0E" stroke-width="3" opacity=".5" fill="none"/><ellipse cx="306" cy="68" rx="18" ry="46" fill="#FFF1CF" stroke="#2B1A0E" stroke-width="4"/><circle cx="302" cy="44" r="6" fill="#5DB546"/><circle cx="310" cy="62" r="6" fill="#8C4A26"/><circle cx="300" cy="78" r="6" fill="#E53935"/><circle cx="309" cy="94" r="5" fill="#6B3B1F"/></svg><figcaption><strong>Big burrito <span class="size-tag size-big">Big</span></strong>Breakfast or lunch &amp; dinner fillings.</figcaption></figure>
+        <figure class="reveal"><svg class="small-svg" viewBox="0 0 340 140" role="img" aria-label="Illustration of a smaller burrito"><ellipse cx="170" cy="128" rx="140" ry="8" fill="#000" opacity=".5"/><path d="M28,66 C26,36 46,20 78,18 C140,12 220,14 282,20 C308,24 322,44 322,68 C322,94 306,116 280,118 C214,124 140,124 80,118 C48,115 30,96 28,66 Z" fill="#E8B86F" stroke="#2B1A0E" stroke-width="7"/><ellipse cx="306" cy="68" rx="18" ry="46" fill="#FFF1CF" stroke="#2B1A0E" stroke-width="6"/><circle cx="302" cy="50" r="8" fill="#8C4A26"/><circle cx="308" cy="74" r="8" fill="#6B3B1F"/><circle cx="300" cy="94" r="7" fill="#E53935"/></svg><figcaption><strong>Smaller burrito <span class="size-tag size-small">Small</span></strong>Nine fillings to choose from.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:2rem">
     <div class="container">
 
       <div class="menu-block" id="breakfast">
@@ -59,11 +77,11 @@
           <span class="badge">Morning</span>
         </div>
         <p class="menu-note">For early shifts, morning meetings and the kind of day that starts before the coffee does.</p>
-        <ul class="menu-list">
-          <li><span class="menu-item">Potatoes, chorizo &amp; eggs</span></li>
-          <li><span class="menu-item">Eggs &amp; hotlinks</span> <span class="menu-note">spicy sausage</span></li>
-          <li><span class="menu-item">Potatoes, bacon &amp; eggs</span></li>
-          <li><span class="menu-item">Chicharrón</span></li>
+        <ul class="menu-photos big">
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/item-breakfast-big.webp" type="image/webp"><img src="images/site/item-breakfast-big.jpg" width="794" height="640" loading="lazy" alt="Breakfast burritos cut open, filled with scrambled eggs, potatoes and chorizo — from the Burrito Dash menu flyer."></picture></span><div><span class="size-tag size-big">Big</span><span class="menu-item">Potatoes, chorizo &amp; eggs</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/item-hotlinks-big.webp" type="image/webp"><img src="images/site/item-hotlinks-big.jpg" width="921" height="510" loading="lazy" alt="Close-up of a breakfast burrito with eggs and sliced hotlinks — from the Burrito Dash menu flyer."></picture></span><div><span class="size-tag size-big">Big</span><span class="menu-item">Eggs &amp; hotlinks</span><span class="menu-note">spicy sausage</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/stock/breakfast-burrito-eggs-potatoes.webp" type="image/webp"><img src="images/stock/breakfast-burrito-eggs-potatoes.jpg" width="1200" height="1224" loading="lazy" alt="Two halves of a breakfast burrito filled with scrambled eggs and potatoes."></picture><span class="stock-tag">Stock photo</span></span><div><span class="size-tag size-big">Big</span><span class="menu-item">Potatoes, bacon &amp; eggs</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/stock/breakfast-burrito-salsa.webp" type="image/webp"><img src="images/stock/breakfast-burrito-salsa.jpg" width="1200" height="801" loading="lazy" alt="A grilled breakfast burrito cut in half, served with salsa."></picture><span class="stock-tag">Stock photo</span></span><div><span class="size-tag size-big">Big</span><span class="menu-item">Chicharrón</span></div></li>
         </ul>
       </div>
 
@@ -72,9 +90,9 @@
           <h2>Big burritos &mdash; lunch &amp; dinner</h2>
           <span class="badge">Midday &amp; evening</span>
         </div>
-        <ul class="menu-list">
-          <li><span class="menu-item">Carne asada, beans &amp; rice</span></li>
-          <li><span class="menu-item">Birria, beans &amp; rice</span></li>
+        <ul class="menu-photos big">
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/item-carne-asada-big.webp" type="image/webp"><img src="images/site/item-carne-asada-big.jpg" width="772" height="474" loading="lazy" alt="Carne asada burrito cut open with rice and beans — from the Burrito Dash menu flyer."></picture></span><div><span class="size-tag size-big">Big</span><span class="menu-item">Carne asada, beans &amp; rice</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/item-birria-big.webp" type="image/webp"><img src="images/site/item-birria-big.jpg" width="550" height="440" loading="lazy" alt="A Burrito Dash burrito cut open, packed with slow-cooked shredded meat and rice."></picture></span><div><span class="size-tag size-big">Big</span><span class="menu-item">Birria, beans &amp; rice</span></div></li>
         </ul>
         <p class="menu-foot">Beans and rice can be served separate if you'd rather let people build their own plates.</p>
       </div>
@@ -85,27 +103,57 @@
           <span class="badge">Any time</span>
         </div>
         <p class="menu-note">These come alongside the big ones in every guest package &mdash; handy for lighter appetites and for kids.</p>
-        <ul class="menu-list">
-          <li><span class="menu-item">Picadillo</span></li>
-          <li><span class="menu-item">Chicharrón</span></li>
-          <li><span class="menu-item">Bistec red chili</span></li>
-          <li><span class="menu-item">Beans, chorizo &amp; cheese</span></li>
-          <li><span class="menu-item">Carne asada &amp; beans</span></li>
-          <li><span class="menu-item">Potatoes &amp; chorizo</span></li>
-          <li><span class="menu-item">Eggs &amp; hotlinks</span></li>
-          <li><span class="menu-item">Eggs &amp; chorizo</span></li>
-          <li><span class="menu-item">Deshebrada</span></li>
+        <ul class="menu-photos small">
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/small-picadillo.webp" type="image/webp"><img src="images/site/small-picadillo.jpg" width="216" height="216" loading="lazy" alt="Picadillo filling — from the Burrito Dash catering flyer."></picture></span><div><span class="size-tag size-small">Small</span><span class="menu-item">Picadillo</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/small-chicharron.webp" type="image/webp"><img src="images/site/small-chicharron.jpg" width="216" height="216" loading="lazy" alt="Chicharrón filling — from the Burrito Dash catering flyer."></picture></span><div><span class="size-tag size-small">Small</span><span class="menu-item">Chicharrón</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/stock/grilled-beef-burrito.webp" type="image/webp"><img src="images/stock/grilled-beef-burrito.jpg" width="1200" height="1080" loading="lazy" alt="A grilled burrito filled with red-sauced beef."></picture><span class="stock-tag">Stock photo</span></span><div><span class="size-tag size-small">Small</span><span class="menu-item">Bistec red chili</span><span class="menu-note">Stock photo</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/stock/bean-burrito-halves.webp" type="image/webp"><img src="images/stock/bean-burrito-halves.jpg" width="1200" height="800" loading="lazy" alt="A burrito cut in half showing beans and filling."></picture><span class="stock-tag">Stock photo</span></span><div><span class="size-tag size-small">Small</span><span class="menu-item">Beans, chorizo &amp; cheese</span><span class="menu-note">Stock photo</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/small-carne-asada-beans.webp" type="image/webp"><img src="images/site/small-carne-asada-beans.jpg" width="216" height="216" loading="lazy" alt="Carne asada and beans filling — from the Burrito Dash catering flyer."></picture></span><div><span class="size-tag size-small">Small</span><span class="menu-item">Carne asada &amp; beans</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/small-potatoes-chorizo.webp" type="image/webp"><img src="images/site/small-potatoes-chorizo.jpg" width="216" height="216" loading="lazy" alt="Potatoes and chorizo filling — from the Burrito Dash catering flyer."></picture></span><div><span class="size-tag size-small">Small</span><span class="menu-item">Potatoes &amp; chorizo</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/small-eggs-hotlinks.webp" type="image/webp"><img src="images/site/small-eggs-hotlinks.jpg" width="216" height="216" loading="lazy" alt="Eggs and hotlinks filling — from the Burrito Dash catering flyer."></picture></span><div><span class="size-tag size-small">Small</span><span class="menu-item">Eggs &amp; hotlinks</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/small-eggs-chorizo.webp" type="image/webp"><img src="images/site/small-eggs-chorizo.jpg" width="216" height="216" loading="lazy" alt="Eggs and chorizo filling — from the Burrito Dash catering flyer."></picture></span><div><span class="size-tag size-small">Small</span><span class="menu-item">Eggs &amp; chorizo</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/small-deshebrada.webp" type="image/webp"><img src="images/site/small-deshebrada.jpg" width="216" height="216" loading="lazy" alt="Deshebrada filling — from the Burrito Dash catering flyer."></picture></span><div><span class="size-tag size-small">Small</span><span class="menu-item">Deshebrada</span></div></li>
         </ul>
+        <p class="menu-foot">Photos marked &ldquo;Stock photo&rdquo; are for illustration only &mdash; everything else is cropped from Burrito Dash's own flyers.</p>
+      </div>
+
+      <div class="menu-block" id="packages">
+        <div class="menu-head">
+          <h2>How the sizes come together</h2>
+        </div>
+        <div class="split" style="margin-top:1.2rem">
+          <div class="pkg-grid pkg-stack" style="margin-top:0">
+            <article class="pkg pkg-featured reveal">
+              <h3>Package for 25 guests</h3>
+              <div class="pkg-split">
+                <div><span class="num">25</span><span class="lbl">big burritos</span> <span class="size-tag size-big">Big</span></div>
+                <div><span class="num small-num">12</span><span class="lbl">smaller burritos</span> <span class="size-tag size-small">Small</span></div>
+              </div>
+            </article>
+            <article class="pkg reveal">
+              <h3>Package for 50 guests</h3>
+              <div class="pkg-split">
+                <div><span class="num">50</span><span class="lbl">big burritos</span> <span class="size-tag size-big">Big</span></div>
+                <div><span class="num small-num">24</span><span class="lbl">smaller burritos</span> <span class="size-tag size-small">Small</span></div>
+              </div>
+            </article>
+            <div class="pack reveal" style="background:var(--color-surface-alt)"><span class="pack-num"><strong>6</strong><span>or 10</span></span><div><h3>Packs of 6 &amp; 10</h3><p>For gatherings under 25. Chips &amp; salsa included.</p></div></div>
+          </div>
+          <figure class="reveal" style="margin:0">
+            <picture><source srcset="images/site/packages-25-50.webp" type="image/webp"><img class="photo-frame" src="images/site/packages-25-50.jpg" width="694" height="495" loading="lazy" alt="Package flyer: 25 guests gets 25 big and 12 smaller burritos; 50 guests gets 50 big and 24 smaller burritos, with cilantro, cebolla, salsa, limes, plates, napkins and utensils."></picture>
+            <figcaption class="photo-caption">From the Burrito Dash packages flyer. <a href="catering.html">Full package details &rarr;</a></figcaption>
+          </figure>
+        </div>
       </div>
 
       <div class="menu-block" id="included">
         <div class="menu-head">
           <h2>Included with every catering order</h2>
         </div>
-        <ul class="menu-list">
-          <li><span class="menu-item">Red and green salsa</span></li>
-          <li><span class="menu-item">Cilantro, onion and limes</span></li>
-          <li><span class="menu-item">Plates, napkins and utensils</span></li>
+        <ul class="menu-photos extras">
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/item-salsa.webp" type="image/webp"><img src="images/site/item-salsa.jpg" width="756" height="600" loading="lazy" alt="Bowls of red and green salsa — from the Burrito Dash menu flyer."></picture></span><div><span class="menu-item">Red and green salsa</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/item-toppings.webp" type="image/webp"><img src="images/site/item-toppings.jpg" width="780" height="510" loading="lazy" alt="Cilantro, onion and limes — from the Burrito Dash menu flyer."></picture></span><div><span class="menu-item">Cilantro, onion and limes</span></div></li>
+          <li class="reveal"><span class="menu-thumb"><picture><source srcset="images/site/item-plates.webp" type="image/webp"><img src="images/site/item-plates.jpg" width="786" height="399" loading="lazy" alt="Plates, napkins and utensils icons — from the Burrito Dash menu flyer."></picture></span><div><span class="menu-item">Plates, napkins and utensils</span></div></li>
         </ul>
         <p class="menu-foot">No extra charge, no "serveware package" upsell. It arrives ready to put on a table.</p>
       </div>
@@ -114,15 +162,21 @@
   </section>
 
   <section class="section-alt">
-    <div class="container">
-      <h2>What about prices?</h2>
-      <p>Pricing depends on your head count, the meal and the fillings you pick, so we quote each order rather than publish a flat list. Send the date and the number of people and you'll get a price back.</p>
-      <!--
-        BUILD NOTE: the client supplied no prices in any material. Nothing was invented.
-        If they want prices published, drop them next to each item in the lists above —
-        docs/README.md shows exactly how. This is the single highest-value content addition.
-      -->
-      <p><a class="btn" href="contact.html">Get a price for your date</a></p>
+    <div class="container split">
+      <div>
+        <h2>What about prices?</h2>
+        <p>Pricing depends on your head count, the meal and the fillings you pick, so we quote each order rather than publish a flat list. Send the date and the number of people and you'll get a price back.</p>
+        <!--
+          BUILD NOTE: the client supplied no prices in any material. Nothing was invented.
+          If they want prices published, drop them next to each item in the lists above —
+          docs/README.md shows exactly how. This is the single highest-value content addition.
+        -->
+        <p><a class="btn" href="contact.html">Get a price for your date</a></p>
+      </div>
+      <figure class="reveal" style="margin:0;max-width:26rem;justify-self:center">
+        <picture><source srcset="images/site/flyer-menu.webp" type="image/webp"><img class="photo-frame" src="images/site/flyer-menu.jpg" width="786" height="1161" loading="lazy" alt="The Burrito Dash menu flyer: breakfast and lunch/dinner burritos, with salsa, toppings, plates, napkins and utensils."></picture>
+        <figcaption class="photo-caption">The original menu flyer.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -140,7 +194,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-logo">
-        <img src="images/logo-black.png" alt="Burrito Dash">
+        <img src="images/site/logo.png" width="460" height="345" alt="Burrito Dash" loading="lazy">
         <p>Drop-off burrito catering for offices, parties and anything with 25 hungry people. Good food brings people together.</p>
       </div>
       <div>
