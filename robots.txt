@@ -1,0 +1,11 @@
+# DEMO BUILD — this site is a proposal, not the client's live site.
+# Blocking all crawlers so it cannot be indexed or compete with their real listings.
+# ON REAL LAUNCH: replace this whole file with the three lines at the bottom.
+User-agent: *
+Disallow: /
+
+# --- launch version (uncomment, delete the block above) ---
+# User-agent: *
+# Allow: /
+# Disallow: /thank-you.html
+# Sitemap: https://REPLACE-DOMAIN.com/sitemap.xml

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- DEMO ONLY: delete this line when the client approves and you launch for real -->
+<title>Request a Catering Quote | Burrito Dash</title>
+<meta name="description" content="Tell us your date, head count and fillings and we'll send a catering price. Two weeks' notice, 25-person minimum. Delivery available.">
+<link rel="canonical" href="https://REPLACE-DOMAIN.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Request a Burrito Dash catering quote">
+<meta property="og:description" content="Send the date and the head count. We'll come back with a price and hold the date once you confirm.">
+<meta property="og:url" content="https://REPLACE-DOMAIN.com/contact.html">
+<meta property="og:image" content="https://REPLACE-DOMAIN.com/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html"><img src="images/logo-black.png" alt="Burrito Dash"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a class="btn" href="#quote">Request a quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero hero-compact">
+    <div class="container">
+      <h1>Tell us about your date</h1>
+      <p>Head count, meal and the day you need it. You'll get a price back &mdash; and once you confirm, the date is held for you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <div id="quote">
+          <h2>Request a quote</h2>
+          <!--
+            STATIC DEFAULT: this form navigates to thank-you.html and does not send mail.
+            To make it live, pick one:
+              Netlify  — add  data-netlify="true"  to the <form> and change method to "post"
+              Formspree — change action to https://formspree.io/f/YOUR_ID  and method to "post"
+            docs/DEPLOYMENT.md walks through both.
+          -->
+          <form action="thank-you.html" method="get">
+            <div class="form-field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="date">Date of your event</label>
+              <input type="date" id="date" name="date" required>
+              <span class="form-hint">Catering needs at least two weeks' notice.</span>
+            </div>
+            <div class="form-field">
+              <label for="guests">How many people</label>
+              <input type="number" id="guests" name="guests" min="1" inputmode="numeric" placeholder="25" required>
+              <span class="form-hint">25-person minimum on catering. Fewer? Ask about the packs of 6 and 10.</span>
+            </div>
+            <div class="form-field">
+              <label for="meal">Which meal</label>
+              <select id="meal" name="meal">
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Dinner</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">Fillings you want, and anything else</label>
+              <textarea id="message" name="message" rows="5" placeholder="e.g. half carne asada, half birria — beans and rice separate please. Drop off at the office by 11:30."></textarea>
+            </div>
+            <button class="btn" type="submit">Send request</button>
+          </form>
+        </div>
+
+        <div class="nap-block">
+          <h2>Or reach us directly</h2>
+
+          <div class="nap-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            <div>
+              <strong>Phone</strong><br>
+              <span class="todo">[ADD PHONE NUMBER]</span>
+            </div>
+          </div>
+
+          <div class="nap-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <div>
+              <strong>Email</strong><br>
+              <span class="todo">[ADD EMAIL]</span>
+            </div>
+          </div>
+
+          <div class="nap-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <div>
+              <strong>Facebook</strong><br>
+              Message the page for availability &mdash; <span class="todo">[ADD PAGE LINK]</span>
+            </div>
+          </div>
+
+          <div class="nap-row">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>Delivery area</strong><br>
+              <span class="todo">[SERVICE AREA]</span> and surrounding towns
+            </div>
+          </div>
+
+          <div class="rules" style="margin-top:2rem">
+            <strong>Before you send</strong>
+            <ul>
+              <li>Catering orders need <strong>two weeks' notice</strong>.</li>
+              <li><strong>25-person minimum</strong> on catering.</li>
+              <li>Your date is reserved <strong>once the order is confirmed</strong>, not when you ask.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <img src="images/logo-black.png" alt="Burrito Dash">
+        <p>Drop-off burrito catering for offices, parties and anything with 25 hungry people. Good food brings people together.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="catering.html">Catering &amp; packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Order</h3>
+        <ul>
+          <li>Phone: <span class="todo">[ADD PHONE]</span></li>
+          <li>Email: <span class="todo">[ADD EMAIL]</span></li>
+          <li>Facebook: <span class="todo">[ADD PAGE LINK]</span></li>
+          <li>Serving <span class="todo">[SERVICE AREA]</span></li>
+        </ul>
+        <p style="margin-top:1rem">Catering by appointment. Two weeks' notice, 25-person minimum.</p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; <span id="year">2026</span> Burrito Dash. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
